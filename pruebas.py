@@ -1,7 +1,7 @@
 import speech_recognition as sr
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
-import sst_func
+import stt_func
 #sacadas de https://www.cronoshare.com/blog/10-averias-comunes-en-un-movil/
 allsentences = ["Un uso continuado del móvil puede hacer que comience a ir lento. Si las aplicaciones tardan una eternidad en abrirse o acciones básicas como mirar la agenda o realizar una llamada tardan demasiado en efectuarse, significa que el terminal está sobrecargado de datos.Recuerda ir borrando la memoria caché de las aplicaciones de vez en cuando. También haz limpieza de archivos antiguos que ya no necesites: fotos, vídeos, audios, documentos… Aun así, la opción más efectiva es realizar una copia de seguridad de todos los archivos importantes y formatear el terminal entero. Al restaurarlo a su estado fábrica, su velocidad y rendimiento serán mucho mayores.",
 "Los smartphone no se caracterizan por la amplia duración de su batería. Además, es muy común que, según vaya pasando el tiempo, esta funcione cada vez peor. Las baterías tienen una vida de entre dos y tres años, por lo que es recomendable cambiarlas cuando cumplen ese periodo. Si no se cambian pueden sobrecalentarse y/o deteriorarse y causar problemas internos graves, además de acortar en exceso su duración.",
@@ -31,5 +31,5 @@ params = {"sentences": allsentences,
 
 #print(X.toarray().shape)
 
-sst_audio = "telefono se apaga solo"
-sst_func.getSoluciones(params,sst_audio)
+stt_audio = "telefono se apaga solo"
+stt_func.getSoluciones(params,stt_audio)

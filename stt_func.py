@@ -3,14 +3,14 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 
-def getSoluciones(params ,sst_audio):
+def getSoluciones(params ,stt_audio):
     
     allsentences = params['sentences']
     problems = params['problems']
     n_neighbors = params['n_neighbors']
 
-    #sst_audio = "mi telefono se apaga solo"
-    allsentences.append(sst_audio)
+    
+    allsentences.append(stt_audio)
 
     #Bag of Words + transformacion Tf-Idf 
     vectorizer = TfidfVectorizer()
@@ -32,13 +32,13 @@ def getSoluciones(params ,sst_audio):
 
 
 
-def applySSTassistant(params):
+def applySTTassistant(params):
     
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Di algo")
         audio = r.listen(source)
-        print("Gracias")
+        print("Gracias\n")
         
     try: 
         recognize_audio = r.recognize_google(audio, language='es-ES')

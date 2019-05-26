@@ -1,4 +1,4 @@
-import sst_func
+import stt_func
 
 #sacadas de https://www.cronoshare.com/blog/10-averias-comunes-en-un-movil/
 allsentences = ["Un uso continuado del móvil puede hacer que comience a ir lento. Si las aplicaciones tardan una eternidad en abrirse o acciones básicas como mirar la agenda o realizar una llamada tardan demasiado en efectuarse, significa que el terminal está sobrecargado de datos.Recuerda ir borrando la memoria caché de las aplicaciones de vez en cuando. También haz limpieza de archivos antiguos que ya no necesites: fotos, vídeos, audios, documentos… Aun así, la opción más efectiva es realizar una copia de seguridad de todos los archivos importantes y formatear el terminal entero. Al restaurarlo a su estado fábrica, su velocidad y rendimiento serán mucho mayores.",
@@ -25,7 +25,7 @@ params = {"sentences": allsentences,
           "n_neighbors":3}
 
 
-sst_func.applySSTassistant(params)
+stt_func.applySTTassistant(params)
 
 
 
